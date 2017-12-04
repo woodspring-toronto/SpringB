@@ -103,7 +103,7 @@ public class Book implements Serializable {
 		return publishers;
 	}
 	
-	public String getPublishersString() {
+	private String getPublishersString() {
 		StringBuilder strBuilder = new StringBuilder();
 		if (publishers!=null) {
 			publishers.stream().forEach(item -> strBuilder.append("{"+ item.toString()+"}"));
